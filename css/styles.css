@@ -394,9 +394,7 @@ p, h1, h2, h3, h4{
 }   
 
 .carucel-logos{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+  
     height: 260px;
     background: #F0F0F0;
     margin: 24px 0 60px 0;
@@ -440,6 +438,10 @@ p, h1, h2, h3, h4{
     -moz-transform: scale(105%);
     -ms-transform: scale(105%);
     -o-transform: scale(105%);
+}
+
+.player-card img:hover ~  .hidden-info{
+    opacity: 1;
 }
 
 .player-card .info-card{
@@ -518,6 +520,91 @@ footer{
     font-size: 18px;
 }
 
+/* PIONEROS  */
+
+
+
+.presentation{
+    background: url(../img/roster.jpg) center / cover;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 78px;
+}
+.presentation h1{
+    font-family: var(--teko);
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+}
+.presentation span{
+    font-size: 120px;
+    font-family: var(--teko);
+    font-weight: 800;
+}
+
+.p-section-1{
+    min-height: 2150px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+
+.rosters {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.rosters .player-card{
+    min-height: 400px;
+    width: unset;
+    display: flex;
+    justify-content: center;
+    
+}
+.rosters .player-card img{
+    width: 120%;
+}
+
+.rosters .player-card .hidden-info{
+    position: absolute;
+    left: 23%;
+    width: 100%;
+    background: var(--strong-orangee);
+    bottom: 15px;
+    z-index: 100;
+    opacity: 0;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+}
+
+.rosters .player-card .hidden-info h1{
+    font-family: var(--teko);
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
     .info-slide h1{
         font-size: 35px;
@@ -573,4 +660,7 @@ footer{
     .img-p1{
         margin-bottom: 15px;
     }
+
+
+    /* PIONEROS  */
 }

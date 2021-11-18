@@ -742,6 +742,197 @@ footer{
     font-family: var(--roboto);
 }
 
+/* CALENDAR  */
+
+.c-section-1{
+    height: 900px;
+    /* background: red; */
+    margin-bottom: 300px;
+}
+.c-section-1 h1{
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.e-section-1{
+    min-height: 1600px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.products {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* CARDS  */
+.products .product-card{
+  border-radius: 4px;
+  min-height: 400px;
+  height: auto;
+  padding: 15px;
+  z-index: 1;
+  position: relative;
+  transition: all .4s ease  ;
+  -webkit-transition: all .4s ease  ;
+  -moz-transition: all .4s ease  ;
+  -ms-transition: all .4s ease  ;
+  -o-transition: all .4s ease  ;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.products .product-card:hover{
+    box-shadow: 0 4px 20px #00000020;
+  }
+
+.product-img{
+    width: 270px;
+    height: 270px;
+    margin: auto;
+  }
+  .product-img img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-info {
+    width: 270px;
+    margin: auto;
+    height: auto;
+  }
+  .product-info h1{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 800;
+    margin: 10px 0 13px 0!important; 
+    font-family: var(--roboto);
+  }
+  .product-info p{
+    font-size: 16px;
+    color: #2A2C31;
+    margin: 0; 
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .product-info span{
+    font-size: 16px;
+    color: var(--orangee);
+    font-weight: 800;
+    font-family: var(--roboto);
+  }
+  .buy-c{
+    opacity: 0;
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    right: 18px;
+    bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+  }
+
+  .car-btn{
+    width: 30px;
+    height: 30px;
+    background: var(--orangee);
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  .car-btn i{
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .product-card:hover .buy-c{
+    bottom: 10px;
+    opacity: 1;
+  }
+  .product-card:hover .buy-c2{
+    bottom: -3px!important;
+    opacity: 1;
+  }
+  .buy-c .buy{
+    width: 70px;
+    height: 30px;
+    background: white;
+    border: 1px solid #EFEFEF;
+    color: var(--verde-claro);
+    font-size: 9px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+  }
+  
+  .buy-c .buy:hover{
+    background: var(--orangee);
+    color: white;
+  }
+
+  .p_pagination {
+    width: auto;
+    height: 50px;
+    margin-top: 70px;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  
+  .p_pagination p {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 10px;
+    color: var(--orangee);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+  }
+  .p_pagination p:hover {
+    background: var(--orangee);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+  .c-pagination{
+      display: flex;
+      justify-content: center;
+      }
+
+  /* END CARDS  */
+  
 
 @media screen and (max-width: 800px) {
     .info-slide h1{
@@ -755,6 +946,12 @@ footer{
 
     .info-slide h2, .info-slide h2 span{
         font-size: 13px;
+    }
+    .header-top{
+        height: 45px;
+    }
+    .header-top span{
+        position: unset;
     }
 
     .tickets-buy{
@@ -818,5 +1015,25 @@ footer{
     }
     .b-section-2 .player .info > div:nth-child(1){
         width: 170px;
+    }
+    .products .product-card{
+        min-height: 290px;
+        height: auto;
+        padding: 10px;
+    }
+    .products{
+        max-height: unset;
+        grid-template-columns: repeat(auto-fill, 46%);
+        justify-content: space-between;
+    }
+    .product-img{
+        width: 90%;
+        height: 50%;
+    }
+    .product-info h1{
+        font-size: 12px;
+    }
+    .tickets-presentation{
+        margin-bottom: 20px;
     }
 }

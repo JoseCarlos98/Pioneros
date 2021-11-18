@@ -16,6 +16,9 @@ font-family: 'Teko', sans-serif; */
     --teko : 'Teko', sans-serif;
     --color-fuente: #464646;
     --gris: #5F5F5F;
+    --light-grey: #DDDDDD;
+    --medium-gray : #B4B4B4;
+    --strong-grey: #B4B4B4;
 }
 
 .f-c{
@@ -522,8 +525,7 @@ footer{
     font-size: 18px;
 }
 
-/* PIONEROS  */
-
+/* RUSTER  */
 
 
 .presentation{
@@ -993,11 +995,7 @@ footer{
     font-size: 10px;
     border-bottom: 1px solid #A8A8A8;
   }
-  
-  /* .mini-img:hover{
-     border-color: 5px solid var(--strong-orangee);
-  } */
-  
+    
   .minis-imgs{
     margin-top: 20px;
     height: 80px;
@@ -1152,6 +1150,240 @@ footer{
     font-family: var(--roboto);
     color: #101218;
   }
+
+
+
+
+  /* SCOREBOARD  */
+  .s-section-1{
+      min-height: 720px;
+      height: auto;
+      background: wheat; 
+      padding-bottom: 20px;
+    }
+ .s-section-1 > h1:first-child {
+     font-family: var(--roboto);
+     color: var(--strong-grey);
+     font-weight: 800;
+ }
+ .scoreboard{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+ }
+ .scoreboard .team1, .team2{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: var(--roboto);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+ }
+ .scoreboard .team1 img, .team2 img{
+    width: 65px;
+    height: 65px;
+ }
+ .scoreboard .vs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+    width: 20%;
+ }
+ .scoreboard .vs h2, .vs span{
+       font-weight: 800;
+       font-size: 40px;
+       font-family: var(--roboto);
+ }
+ .scoreboard .vs span{
+     font-size: 30px;
+    }
+.s-section-1 .date{
+    background: var(--light-grey);
+    height: 50px;
+}
+.s-section-1 .date h1{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--roboto);
+    margin-right: 10px;
+    color: var(--black);
+ }
+ .matching-options{
+     background: var(--strong-grey);
+     height: 55px;
+     display: flex;
+     align-items: center;
+     padding-left: 8px;
+}
+.matching-options > div{
+    background: #E0E0E0;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7C7C7C;
+    font-family: var(--roboto);
+    font-weight: 800;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.selected-options{
+    background: white!important;
+}
+
+.playByplay{
+    background: var(--light-grey);
+    height: 100px;
+    font-family: var(--roboto);
+    font-weight: 600;
+    color: var(--black);
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.period{
+    display: flex;
+    
+}
+
+.period h1{
+    font-size: 18px;
+    font-family: var(--roboto);
+    color: var(--black);
+    margin-right: 20px;
+}
+
+.periods{
+    /* background: red; */
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.periods > div {
+    background: beige;
+    /* min-width: 250px; */
+    height: 70px;
+    width: auto;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+
+    justify-content: space-between!important;
+}
+.periods > div > div:nth-child(1) {
+    padding: 20px;
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--roboto);
+}
+.periods > div > div:nth-child(2) {
+    flex-wrap: nowrap;
+    padding: 20px;
+    line-height: 20px;
+    text-align: center;
+    min-width: 50%;
+    background: var(--black);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: var(--roboto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.line{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: black;
+    left: calc(50% - 19px);
+    bottom: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.period-r {
+    align-items: center;
+    min-width: 100px;
+    height: 40px!important;
+    display: flex;
+    position: relative;
+    justify-content: center!important;
+    border: 1px solid var(--strong-grey);
+}
+.period-r span{
+    font-family: var(--roboto);
+    color: var(--strong-grey);
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.period-r h1{
+    font-family: var(--roboto);
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--black);
+}
+.period-r h1 span{
+    color: var(--black);
+}
+.period-r .info-p-r {
+    position: absolute;
+    right: 0;
+    border: 1px solid var(--strong-grey);
+    width: 400px;
+    left: 100%;
+    background: wheat;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right-p{
+    border-right: 5px solid red!important;
+
+}
+.period-r .info-p-r img{
+    width: 20px;
+    height: 20px;
+}
+.left-p{
+    right: 100%!important;
+    /* border-right:unset!important; */
+    border-left: 5px solid red!important;
+    left: unset!important;
+}
+
+
+
+
+
+
+
+
+
+
   
 
 @media screen and (max-width: 800px) {
@@ -1359,5 +1591,44 @@ footer{
     .btnBuy-car:hover{
         background: #FFFFFE!important;
       }
+
+      .period{
+         flex-wrap: wrap; 
+      }
+
+
+      .periods > div{
+        width: 100%;
+        height: auto!important;
+      }
+      .period-r .info-p-r {
+          position: unset;
+      }
+        .scoreboard .team1, .team2{
+          padding-top: 67px;
+          position: relative;
+          flex-direction: column;
+          text-align: center;
+          font-size: 12px;
+        }
+        .scoreboard .vs span{
+            font-size: 15px;
+            margin: 0 10px;
+        }
+        .scoreboard .vs h2, .vs span{
+            font-size: 30px;
+        }
+
+        .scoreboard .team1 img, .team2 img{
+            position: absolute;
+            top: 0;
+
+        }
+        .s-section-1 .date{
+            margin-top: 20px;
+        }
+        .scoreboard .vs{
+            width: 30%;
+        }
     
 }

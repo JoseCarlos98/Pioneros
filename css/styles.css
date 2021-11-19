@@ -360,7 +360,6 @@ p, h1, h2, h3, h4{
 .last-movements{
     padding-top: 44px;
     height: 720px;
-    box-shadow: 0 3px 10px #00000010;
 }
 .last-movements .moves{
     margin-bottom: 35px!important;
@@ -1158,11 +1157,10 @@ footer{
   .s-section-1{
       min-height: 720px;
       height: auto;
-      background: wheat; 
       padding-bottom: 20px;
     }
  .s-section-1 > h1:first-child {
-     font-family: var(--roboto);
+     font-family: var(--teko);
      color: var(--strong-grey);
      font-weight: 800;
  }
@@ -1173,8 +1171,9 @@ footer{
  }
  .scoreboard .team1, .team2{
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
     font-family: var(--roboto);
+    /* font-family: var(--teko); */
     color: var(--black);
     display: flex;
     align-items: center;
@@ -1227,7 +1226,7 @@ footer{
     color: #7C7C7C;
     font-family: var(--roboto);
     font-weight: 800;
-    height: 40px;
+    height: 35px;
     margin-right: 8px;
 }
 
@@ -1235,16 +1234,19 @@ footer{
     background: white!important;
 }
 
-.playByplay{
+.category{
     background: var(--light-grey);
-    height: 100px;
+    height: 80px;
     font-family: var(--roboto);
     font-weight: 600;
     color: var(--black);
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     align-items: center;
     padding-left: 20px;
+}
+.p-title{
+    font-size: 20px;
 }
 
 .period{
@@ -1270,15 +1272,13 @@ footer{
     flex-direction: column;
 }
 .periods > div {
-    background: beige;
     /* min-width: 250px; */
     height: 70px;
     width: auto;
     margin-bottom: 15px;
     display: flex;
     position: relative;
-
-    justify-content: space-between!important;
+    justify-content: space-evenly!important;
 }
 .periods > div > div:nth-child(1) {
     padding: 20px;
@@ -1311,11 +1311,11 @@ footer{
 
 .line{
     position: absolute;
-    width: 40px;
+    width: 16px;
     height: 2px;
     background: black;
-    left: calc(50% - 19px);
-    bottom: 0;
+    left: calc(50% - 9px);
+    bottom: -9px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -1332,14 +1332,15 @@ footer{
     justify-content: center!important;
     border: 1px solid var(--strong-grey);
 }
-.period-r span{
+.period-r > span{
+    margin-left: 5px;
     font-family: var(--roboto);
     color: var(--strong-grey);
     font-size: 13px;
     font-weight: 700;
-    margin-right: 5px;
 }
 .period-r h1{
+    margin: 0 5px 0 0;
     font-family: var(--roboto);
     font-size: 13px;
     font-weight: 800;
@@ -1354,7 +1355,6 @@ footer{
     border: 1px solid var(--strong-grey);
     width: 400px;
     left: 100%;
-    background: wheat;
     display: flex;
     height: 40px;
     align-items: center;
@@ -1370,14 +1370,94 @@ footer{
 }
 .left-p{
     right: 100%!important;
-    /* border-right:unset!important; */
-    border-left: 5px solid red!important;
+    border-left: 5px solid blue!important;
     left: unset!important;
 }
 
 
+.play-section-1 .play-table{
+    min-height: 600px;
+    height: auto;
+}
+
+.match-titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.match-titles h2{
+    font-size: 20px;
+    font-family: var(--teko);
+    /* font-family: var(--roboto); */
+    font-weight: 500;
 
 
+}
+
+.table-info{
+    height: 400px;
+    background: wheat;
+}
+
+.coach-info{
+    line-height: 80px;
+}
+
+.coach-info > h1{
+    margin-bottom: 5px!important;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--black);
+    font-family: var(--roboto);
+}
+.coach-info > h1 > span{
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+
+.play-section-1 .legend{
+    padding-top: 15px;
+    background: #EFEFEF;
+    min-height: 400px;
+    height: auto;
+    margin-top: 50px;
+}
+.play-section-1 .legend > h1{
+    font-family: var(--teko);
+    color: #4C4C4C;
+    margin-left: 15px;
+}
+.play-section-1 .legend .info-legend{
+    min-height: 250px;
+    height: auto;
+}
+.play-section-1 .legend .info-legend .col-md-3{
+}
+.play-section-1 .legend .info-legend .col-md-3 ul{
+    padding: 0;
+    list-style: none;
+    min-height: 200px;
+    height: auto;
+}
+.play-section-1 .legend .info-legend .col-md-3 ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.play-section-1 .legend .info-legend .col-md-3 ul h2{
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: var(--roboto);
+    font-weight: 700;
+}
+.play-section-1 .legend .info-legend .col-md-3 ul h3{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-style: italic;
+}
 
 
 
@@ -1592,43 +1672,55 @@ footer{
         background: #FFFFFE!important;
       }
 
-      .period{
-         flex-wrap: wrap; 
-      }
+    .period{
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
 
 
-      .periods > div{
-        width: 100%;
-        height: auto!important;
-      }
-      .period-r .info-p-r {
-          position: unset;
-      }
-        .scoreboard .team1, .team2{
-          padding-top: 67px;
-          position: relative;
-          flex-direction: column;
-          text-align: center;
-          font-size: 12px;
-        }
-        .scoreboard .vs span{
-            font-size: 15px;
-            margin: 0 10px;
-        }
-        .scoreboard .vs h2, .vs span{
-            font-size: 30px;
-        }
+    .periods > div{
+    width: 100%;
+    height: auto!important;
+    }
+    .period-r .info-p-r {
+        position: unset;
+    }
+    .scoreboard .team1, .team2{
+        padding-top: 67px;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+    .scoreboard .vs span{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .scoreboard .vs h2, .vs span{
+        font-size: 30px;
+    }
 
-        .scoreboard .team1 img, .team2 img{
-            position: absolute;
-            top: 0;
+    .scoreboard .team1 img, .team2 img{
+        position: absolute;
+        top: 0;
 
-        }
-        .s-section-1 .date{
-            margin-top: 20px;
-        }
-        .scoreboard .vs{
-            width: 30%;
-        }
+    }
+    .s-section-1 .date{
+        margin-top: 20px;
+    }
+    .scoreboard .vs{
+        width: 30%;
+    }
+
+    .period-r h1{
+        font-size: 10px;
+    }
+    .periods > div > div:nth-child(2){
+        font-size: 15px;
+    }
+    .period-r > span{
+        font-size: 9px;
+        margin-right: 5px;
+    }
     
 }
